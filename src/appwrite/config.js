@@ -112,6 +112,14 @@ export class Service {
             return false
         }
     }
+
+    // getFilePreview(){
+    //     try {
+            
+    //     } catch (error) {
+            
+    //     }
+    // }
 }
 
 const service = new Service();
