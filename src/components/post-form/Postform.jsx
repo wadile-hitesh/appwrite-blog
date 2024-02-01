@@ -40,7 +40,7 @@ function Postform({ post }) {
             const file = await appwriteService.uploadFile(data.image[0]);
 
             if (file) {
-                const fileId = post.$id
+                const fileId = file.$id
                 data.featuredImage = fileId
                 const dbPost = await appwriteService.createPost({ ...data, userId: userData.$id })
                 if (dbPost) {
